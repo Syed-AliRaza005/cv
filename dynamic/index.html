@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page title</title>
+    <link rel="stylesheet" href="dynamic.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header> 
+        <h1> AR Resume Maker</h1>
+      </header>
+    <main>
+        <div class="container">
+            <form id="resume-form">
+            <section>
+               <h2>Personal Information</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" autocomplete="on"><br><br>  
+                 <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone"><br><br>
+            </section>
+         
+            <section>     
+            <h2>Education</h2>
+            
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree"><br><br>
+                <label for="university">University:</label>
+                <input type="text" id="university" name="university"><br><br>
+                <label for=""> Date:</label>
+                <input type="date" id="date" name="date"><br><br>
+            </section>
+
+
+            <div id="skill" class="hiddend">     
+            <h2>Skills</h2>
+                <label for="skill1">Skill 1:</label>
+                <input type="text" id="skill1" name="skill1"><br><br>
+                <label for="skill-2">Skill 2:</label>
+                <input type="text" id="skill2" name="skill2"><br><br>
+                <label for="skill-3">Skill 3:</label>
+                <input type="text" id="skill3" name="skill3"><br><br>
+            </div>
+
+
+    
+           <section>
+              <h1>Experience</h1>
+                <label for="job">Job Title:</label>
+                <input type="text" id="job" name="job"><br><br>
+                <label for="company">Company:</label>
+                <input type="text" id="company" name="company"><br><br>
+                <label for="description">Job Description:</label>
+                <textarea type="textarea"  id="description" name="description"></textarea><br><br>      
+          </section> 
+          
+          
+
+
+
+
+
+          <button id="submit-btn">Generate-cv</button>
+        </form>
+               <div  id="Generate-cv"></div>
+ 
+        <button id="shareButton">Share</button>
+       
+    </div>
+        </main>
+        <script src="dynamic.js"></script>
+
+</body>
+</html>
